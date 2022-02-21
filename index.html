@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/Portfolio/img/gradient_blue.png"
+      type="image/x-icon"
+    />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/Portfolio/css/style.css" />
+    <script src="/Portfolio/js/script.js"></script>
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=Dancing+Script&family=Great+Vibes&family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div>
+            
+              <button onClick="copyLink();" class="btn btn-primary">
+                Copy Email
+              </button>
+              <input id="mail" type="hidden" value="tranvinhan2k@gmail.com"/>
+              My Email : tranvinhan2k@gmail.com
+            </div>
+            <div>
+              
+              <button onClick="copyPhone();" class="btn btn-primary">
+                Copy Phone
+              </button>
+              <input id="phone" type="hidden" value="0833881210"/>
+              My Phone : +84833881210
+            </div>
+          </div>
+          <div class="modal-footer">
+           
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row p-2 shadow">
+        <div class="col-3 row">
+          <div class="col-2 m-auto">
+            <img
+              src="/Portfolio/img/gradient_blue.png"
+              alt="logo"
+              style="width: 40px; height: 40px"
+            />
+          </div>
+          <div class="col m-auto font_Bangers fs-1 float-left">
+            Trần Vĩ Nhân
+          </div>
+        </div>
+
+        <div class="col-7"></div>
+        <div class="toolbar col-2 m-auto">
+          <div class="row">
+            <div class="col btn btn-light">
+              <a href="#about">About</a>
+            </div>
+            <div class="col btn btn-light">
+              <a href="#skill">Skills</a>
+            </div>
+            <div class="col btn btn-light">
+              <a href="#project">Project</a>
+            </div>
+            <div class="col btn btn-light">
+              <a href="#contact">Contact</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="about" class="display-4 m-3">Giới thiệu bản thân</div>
+      <div class="about card">
+        <div class="row">
+          <div class="col m-auto">
+            <div class="font_Oswald display-1">Trần Vĩ Nhân</div>
+            <div class="font_Oswald display-4">Frontend Development</div>
+            <div>
+              Xin chào, tôi hiện đang là fresher frontend , có kinh nghiệm làm
+              việc với giao diện và đồ án thực tế.
+            </div>
+            <div class="row my-5 w-50">
+              <div class="col">
+                <div class="btn btn-light" id="fb">
+                  <a href="http://www.facebook.com/soulhanzer">
+                    <img
+                      src="/Portfolio/img/icons8_facebook_60px.png"
+                      alt="fb"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="col">
+                <div class="btn btn-light" id="gg"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <img src="/Portfolio/img/icons8_mail_60px.png" alt="gg" />
+                </div>
+              </div>
+              <div class="col">
+                <div class="btn btn-light" id="p" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <img
+                    src="/Portfolio/img/icons8_phone_squared_60px.png"
+                    alt="ph"
+                  />
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="btn btn-warning text-light">
+                <a href="#contact" style="text-decoration: none;">Contact</a>
+              </div>
+            </div>
+          </div>
+          <div class="col m-auto text-center">
+            <img
+              class="w-50 h-100"
+              src="/Portfolio/img/273675322_663582968425100_8242393927030909058_n__5_-removebg-preview.png"
+              alt="logo"
+            />
+          </div>
+        </div>
+      </div>
+      <div id="skill" class="display-4 m-3">Kĩ năng lập trình</div>
+      <div class="skill my-3">
+        <div class="card p-3 my-2">
+          <div class="label">HTML - CSS - JS</div>
+          <div>
+            Sử dụng thường xuyên, có khả năng code các framework hỗ trợ css như
+            bootstrap, primereact,..
+          </div>
+          <div class="fw-bold">Chứng chỉ:</div>
+          <a
+            class="btn btn-primary"
+            href="https://coursera.org/share/bf8079d2d6e447bacd89cb7b502a6471"
+          >
+            Web Design for Everybody: Basics of Web Development & Coding</a
+          >
+        </div>
+
+        <div class="card p-3 my-2">
+          <div class="label">REACTJS</div>
+          <div>
+            Sử dụng thường xuyên, có kinh nghiệm sử dụng trong đồ án của công ty
+          </div>
+          <div class="fw-bold">Chứng chỉ:</div>
+          <a
+            class="btn btn-primary"
+            href="https://coursera.org/share/bf8079d2d6e447bacd89cb7b502a6471"
+          >
+            Web Design for Everybody: Basics of Web Development & Coding</a
+          >
+        </div>
+
+        <div class="card p-3 my-2">
+          <div class="label">REACT NATIVE</div>
+          <div>Sử dụng trong đồ án trên trường</div>
+          <div class="fw-bold">Chứng chỉ:</div>
+          <a
+            class="btn btn-primary"
+            href="https://coursera.org/share/bf8079d2d6e447bacd89cb7b502a6471"
+          >
+            Web Design for Everybody: Basics of Web Development & Coding</a
+          >
+        </div>
+      </div>
+      <div id="project" class="display-4 m-3">Đồ án đã làm</div>
+      <div class="project overflow-auto" style="width: 98vw; height: 200px">
+        <div class="d-flex h-100">
+          <div class="card p-5 col-2 m-1">Hello</div>
+          <div class="card p-5 col-2 m-1">Hello</div>
+          <div class="card p-5 col-2 m-1">Hello</div>
+          <div class="card p-5 col-2 m-1">Hello</div>
+        </div>
+      </div>
+      <div id="contact" class="display-4 m-3">Liên lạc</div>
+      <div class="container-fluid">
+        <form onsubmit="return false">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Your Name</label>
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputName"
+              aria-describedby="emailHelp"
+              placeholder="Enter your name"
+            />
+            <small id="emailHelp" class="form-text text-muted"
+              >We'll never share your email with anyone else.</small
+            >
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Phone</label>
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputPhone"
+              aria-describedby="emailHelp"
+              placeholder="Enter your phone"
+            />
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Enter your email"
+            />
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Message</label>
+            <textarea
+              rows="3"
+              class="form-control"
+              id="exampleInputMessage"
+              placeholder="Enter your message"
+            ></textarea>
+          </div>
+
+          <button onClick="sendContact();" class="btn btn-primary my-2">
+            Send contact
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+body{
+    background-color: greenyellow;
+}
+.font_Oswald{
+    font-family: 'Oswald', sans-serif;
+}
+.font_Dancing_Script{
+    font-family: 'Dancing Script', cursive;
+}
+.font_Great_Vibes{
+    font-family: 'Great Vibes', cursive;
+}
+.font_size_big{
+    font-size:140px;
+    letter-spacing: 0;
+}
+.about{
+    /* background-color: greenyellow; */
+    padding: 0 150px;
+}
+.label{
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+}
+.skill_card{
+    width: 50%;
+}
